@@ -1,20 +1,32 @@
-<<<<<<< HEAD
-# Personal-portfolio
-=======
-# React + Vite
+# 🚀 Personal Portfolio | Alishba Abbas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my professional portfolio repository! This project is a showcase of my frontend development journey, focusing on building **modern, high-performance, and user-centric web experiences.**
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 🌐 [Live Demo](https://alishba-abbas-personal-portfolio.netlify.app)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Key Features
+* **Modern UI/UX:** Built with a "less is more" philosophy for maximum clarity.
+* **Fully Responsive:** Optimized for all screen sizes from mobile to desktop.
+* **Smooth Animations:** Leveraged **Framer Motion** for a premium feel.
+* **Performance:** Built with **Vite** for blazing fast load times.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
+* **Library:** React.js
+* **Styling:** Tailwind CSS
+* **Animations:** Framer Motion
+* **Deployment:** Netlify
+* **Icons:** React Icons (Feather & Fi)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> d19fdaa (First commit: Navbar, Hero and TechOrbit added)
+## 📁 Project Structure
+```text
+myapp/
+├── src/
+│   ├── components/      # Reusable UI components (Hero, Projects, Contact)
+│   ├── App.jsx          # Main application logic
+│   └── main.jsx         # Entry point
+├── public/              # Assets and images
+└── tailwind.config.js   # Custom styling configurations
