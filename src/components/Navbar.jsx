@@ -1,14 +1,15 @@
 import React, { use } from 'react'
+import { Link } from 'react-router-dom';
 import { useState, useEffect } from "react";
 
 
 // NavLinks array to store the navigation links and their corresponding paths
 const NavLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" }
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Skills", href: "/skills" },
+    { name: "Projects", href: "/projects" },
+    { name: "Contact", href: "/contact" }
 ]
 
 
@@ -49,20 +50,20 @@ const Navbar = () => {
             <ul className='hidden md:flex list-none gap-6 items-center'>
                 {NavLinks.map((link, index) => (
                     <li key={link.href} className='flex  px-4 py-2 cursor-pointer hover:text-gray-400'>
-                        <a href={link.href} className='hover:text-orange-500 text-bold'>
+                        <Link to={link.href} className='hover:text-orange-500 text-bold'>
                             {link.name}
                             {/* Underline effect */}
                              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300" />
-                        </a>
+                        </Link>
                     </li>
                 ))} 
 
             </ul>
 
                 {/* HIRE ME BUTTON */}
-        <a href='#contact' className='hidden md:block text-white  bg-orange-500 hover:bg-orange-500 text-base font-bold px-4 py-1 rounded-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-orange-600/30'>
+        <Link to='#contact' className='hidden md:block text-white  bg-orange-500 hover:bg-orange-500 text-base font-bold px-4 py-1 rounded-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-orange-600/30'>
           Hire Me
-        </a>
+        </Link>
 
             {/* Mobile menu button */}
             <div className="md:hidden flex items-center">
