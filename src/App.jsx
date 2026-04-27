@@ -1,9 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import ParticleBackground from './components/ParticleBackground'
 import TechOrbit from './components/TechOrbit'
-
-
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -15,55 +12,36 @@ import Custompointer from './components/Custompointer'
 
 const App = () => {
   return (
-    <>  
-    <Router>  
-    <div className="relative bg-[#0f172a]  text-white overflow-x-hidden">
-      
-      {/* 1. TechOrbit background in bottom */}
-      <TechOrbit />
-
-      {/* 2.other content */}
-      <div className="relative z-10">
-        <Navbar />
-        <Routes>
+    <Router>
+      <div className="relative bg-[#0f172a] text-white overflow-x-hidden">
+        <TechOrbit />
+        
+        <div className="relative z-10">
+          <Navbar />
+          <Routes>
             <Route path="/" element={<MainLayout />} />
             <Route path="/about" element={<MainLayout />} />
             <Route path="/skills" element={<MainLayout />} />
             <Route path="/projects" element={<MainLayout />} />
             <Route path="/contact" element={<MainLayout />} />
           </Routes>
-        {/* <Hero /> */}
+          <Footer />
+        </div>
         
-        {/* <About />
-        <Skills />
-        <Project />
-        <Contact /> */}
-        <Footer />
-        {/* <About /> */}
-        {/* <Projects /> */}
+        <Custompointer />
       </div>
-      <Custompointer />
-    </div>
-    {/* <div className="min-h-screen bg-[#0a0e1a] text-white font-sans overflow-x-hidden">
-
-      
-    </div> */}
     </Router>
-    </>
   )
 }
 
-
 const MainLayout = () => (
   <>
-    <Hero />
-    <About />
-    <Skills />
-    <Project />
-    <Contact />
+    <div id="hero"><Hero /></div>
+    <div id="about"><About /></div>
+    <div id="skills"><Skills /></div>
+    <div id="projects"><Project /></div>
+    <div id="contact"><Contact /></div>
   </>
 )
-
-
 
 export default App
