@@ -47,7 +47,7 @@ const Hero = () => {
 
         {/* left  content */}
         <div className="space-y-6 text-center md:text-left max-w-2xl">
-          <h1 className="text-4xl md:text-6xl lg:text-6xl font-bold text-orange-500 mb-4 leading-tight">Hi, I'm <br /> <span className="bg-gradient-to-r from-orange-500 to-orange-300 bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-6xl lg:text-6xl  text-orange-500 mb-4  leading-tight"><span className="text-orange-500 text-base">Hi, I'm</span> <br /> <span className="bg-gradient-to-r from-orange-500 to-orange-300 bg-clip-text text-transparent">
              Alishba Abbas
             </span>
             <br />
@@ -61,8 +61,8 @@ const Hero = () => {
           </p>
           <div className="flex justify-center md:justify-start gap-6">
             <a
-              href="/Alishba_Abbas_Resume11.docx"
-              download
+              href="/resume.pdf"
+              download="resume.pdf"
               className="bg-orange-500 hover:bg-orange-500 text-white text-lg font-bold px-6 py-3 rounded-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-orange-600/30"
             >
               Download Resume 
@@ -108,7 +108,7 @@ const Hero = () => {
       <div className="w-[250px] h-[250px] md:w-[400px] md:h-[400px] rounded-full bg-[#1a2235] border-2 border-orange-500/10 flex items-center justify-center overflow-hidden">
                 {/* Initials or replace with <img> */}
                 <span className="font-black text-6xl text-orange-500 font-['Syne',sans-serif]">
-                  <img src="/WhatsApp Image 2026-04-01 at 3.44.11 PM.jpeg" alt="Alishba Abbas" className='rounded-full' />
+                  <img src="/profile-picPM.jpeg" alt="Alishba Abbas" className='rounded-full' />
                 </span>
               </div>
 

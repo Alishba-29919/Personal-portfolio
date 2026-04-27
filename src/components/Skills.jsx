@@ -8,7 +8,7 @@ const SKILLS = [
   { name: "Tailwind CSS",pct: 82, icon: "💨", color: "from-cyan-600 to-cyan-400" },
   { name: "React",       pct: 65, icon: "⚛️", color: "from-sky-600 to-sky-400" },
   { name: "Git & GitHub",pct: 85, icon: "🐙", color: "from-purple-600 to-purple-400" },
-  { name: "Figma",       pct: 70, icon: "📐", color: "from-pink-600 to-pink-400" },
+  { name: "Bootstrap",   pct: 70, icon: "🔧", color: "from-green-600 to-green-400" },
   { name: "Firebase",    pct: 60, icon: "🔥", color: "from-red-600 to-red-400" },
 ];
 
@@ -39,7 +39,7 @@ export default function Skills() {
   }, []);
 
   return (
-    <section id="skills" ref={sectionRef} className="py-24 px-6 bg-[#111827]">
+    <section id="skills" ref={sectionRef} className="py-24 px-6 ">
       <div className="max-w-5xl mx-auto">
 
         {/* Section Header */}
