@@ -44,7 +44,7 @@ export default function Skills() {
 
   return (
     <section id="skills" ref={sectionRef} className="py-24 px-6 ">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-6xl mx-auto">
 
         {/* Section Header */}
         <div className="text-center mb-14">
@@ -66,7 +66,7 @@ export default function Skills() {
             // style={{ animationDelay }} = stagger effect (one after another)
             <div
               key={skill.name}
-              className="bg-[#0a0e1a] border border-orange-500/15 rounded-2xl p-5 hover:border-orange-500/40 transition-all duration-200 hover:-translate-y-1"
+              className="bg-[#0a0e1a] border border-orange-500/20 rounded-2xl p-5 hover:border-orange-500/40 transition-all duration-200 hover:-translate-y-1"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Skill name + percentage */}

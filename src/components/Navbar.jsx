@@ -33,7 +33,7 @@ const Navbar = () => {
 
     return (
         <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${Scroll ? "bg-[#0a0e1a]/90 backdrop-blur-md border-b border-orange-500/20 shadow-lg" : "bg-transparent"}`}>
-            <div className="flex justify-between items-center max-w-[1200px] mx-auto px-4 h-16">
+            <div className="flex justify-between items-center max-w-[1200px] mx-auto px3 h-16">
                 {/* Logo */}
                 <Link to="/" onClick={() => handleScrollTo('hero')} className="font-bold text-xl text-orange-500 tracking-tight flex items-center">
                     Portfolio <span className='text-white ml-1'>Alishba</span>

@@ -14,10 +14,25 @@ const SocialLinks = [
 
   //  right side floating badges avatar
 
-  const FloatingBadge  = [
-  { text: "💻 HTML Expert",  pos: "top-8 -left-4",   anim: "animate-[floatUp_4s_ease-in-out_infinite]" },
-  { text: "🎨 CSS & Design", pos: "bottom-16 -right-4", anim: "animate-[floatDown_5s_ease-in-out_infinite]" },
-  { text: "⚡ Clean Code",   pos: "top-1/2 -left-8",  anim: "animate-[floatUp_3.5s_ease-in-out_infinite]" },
+  const FloatingBadge = [
+  { 
+    text: "💻 HTML Expert",  
+    // Mobile: top-8 left-2 | Badi Screen: sm:-left-6
+    pos: "top-8 left-2 sm:-left-6",  
+    anim: "animate-[floatUp_4s_ease-in-out_infinite]" 
+  },
+  { 
+    text: "🎨 CSS & Design", 
+    // Mobile: bottom-16 right-2 | Badi Screen: sm:-right-6
+    pos: "bottom-16 right-2 sm:-right-6", 
+    anim: "animate-[floatDown_5s_ease-in-out_infinite]" 
+  },
+  { 
+    text: "⚡ Clean Code",   
+    // Mobile: top-1/2 left-2 | Badi Screen: sm:-left-10
+    pos: "top-1/2 left-2 sm:-left-10",  
+    anim: "animate-[floatUp_3.5s_ease-in-out_infinite]" 
+  },
 ];
 
 
@@ -62,20 +77,22 @@ const Hero = () => {
             <a
               href="/resume.pdf"
               download="resume.pdf"
-              className="bg-orange-500 hover:bg-orange-500 text-white text-lg font-bold px-6 py-3 rounded-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-orange-600/30"
+              className="bg-orange-500 hover:bg-orange-500 text-white  font-bold px-4 py-1 md:px-6 md:py-3 lg:px-6 lg:py-3
+              text-sm md:text-lg lg:text-lg w-full sm:w-auto rounded-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-orange-600/30"
             >
               Download Resume 
             </a>
+            {/* px-6 py-3 */}
             <a
               href="#contact"
-              className="bg-orange-500 hover:bg-orange-500 text-white text-lg font-bold px-6 py-3 rounded-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-orange-600/30"
+              className="bg-orange-500 hover:bg-orange-500 text-white text-sm md:text-lg lg:text-lg  font-bold px-4 py-1 md:px-6 md:py-3 lg:px-6 lg:py-3 w-full sm:w-auto rounded-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-orange-600/30"
             >
               Contact Me
             </a>
           </div>
 
           {/* social links */}
-          <div className="flex gap-3 pt-2">
+          <div className="flex gap-3 pt-2 justify-center md:justify-start lg:justify-start">
             {SocialLinks.map((s) => (
               <a key={index} href={s.url} target="_blank"
               
@@ -117,8 +134,15 @@ const Hero = () => {
              {FloatingBadge.map((b) => (
                 <div
                   key={b.text}
-                  className={`absolute ${b.pos} ${b.anim} bg-[#111827] border border-orange-500/20 rounded-xl px-3 py-2 text-xs font-semibold whitespace-nowrap shadow-lg`}
-                >
+                  className={`absolute ${b.pos} ${b.anim} /* Design */
+      bg-[#111827]/90 backdrop-blur-md border border-orange-500/30 
+      rounded-xl px-3 py-2 shadow-2xl z-20
+      /* Typography */
+      text-[10px] sm:text-xs font-bold text-white whitespace-nowrap
+      /* Interaction */
+      hover:scale-110 transition-transform cursor-default`}
+  >
+                
                   {b.text}
                 </div>
               ))}
