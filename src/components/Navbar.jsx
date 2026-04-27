@@ -64,10 +64,6 @@ const Navbar = () => {
           Hire Me
         </a>
 
-
-
-
-
             {/* Mobile menu button */}
             <div className="md:hidden flex items-center">
                 <button onClick={() => setMenuOpen(!menuOpen)} className="text-white focus:outline-none  text-3xl flex items-center">
@@ -80,10 +76,11 @@ const Navbar = () => {
             <ul className="flex flex-col items-center gap-6 py-4">
                 {NavLinks.map((link, index) => (
                     <li key={link.href} className="flex px-4 py-2 cursor-pointer hover:text-gray-400">
-                        <a href={link.href} className="text-lg">{link.name}</a>
+                        <a href={link.href} onClick={() => setMenuOpen(false)} 
+                   className="text-lg">{link.name}</a>
                     </li>
                 ))}
-                <a href="#contact" className="bg-orange-500 text-white text-center font-bold px-6 w-full py-2 rounded-lg mt-2">
+                <a href="#contact" nClick={() => setMenuOpen(false)} className="bg-orange-500 text-white text-center font-bold px-6 w-full py-2 rounded-lg mt-2">
             Hire Me
           </a>
             </ul>

@@ -47,7 +47,7 @@ const Project = () => {
           >
             {/* Card Header */}
             <div className={`h-48 rounded-[2rem] bg-gradient-to-br ${project.color} to-transparent mb-6 flex items-center justify-center relative`}>
-              {/* FiFolder use ho raha hai jo upar import hai */}
+              {/* imported FiFolder */}
               <FiFolder size={48} className="text-slate-700 group-hover:text-orange-400 group-hover:scale-110 transition-all duration-500" />
               
               <div className="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">

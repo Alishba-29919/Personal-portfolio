@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 
-// Skills data — yahan apni skills aur percentages update karo
+// Skills data — name, percentage, icon, and color gradient
 const SKILLS = [
   { name: "HTML5",       pct: 95, icon: "🌐", color: "from-orange-600 to-orange-400" },
   { name: "CSS3",        pct: 88, icon: "🎨", color: "from-blue-600 to-blue-400" },
@@ -13,22 +13,26 @@ const SKILLS = [
 ];
 
 export default function Skills() {
-  // animated = true hone ke baad progress bars fill honge
+  // when animated = true, progress bars will fill to their percentage, otherwise they stay at 0%
   const [animated, setAnimated] = useState(false);
 
-  // sectionRef = is section ka reference
+  // sectionRef = this section ref
   const sectionRef = useRef(null);
 
   useEffect(() => {
-    // IntersectionObserver: jab element screen pe aaye tab callback chalao
+    // IntersectionObserver: when element is in viewport, callback runs. 
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setAnimated(true);      // animation start karo
-          observer.disconnect();  // sirf ek baar chalao
+          // animation start 
+          setAnimated(true);   
+          // only animate once
+
+          observer.disconnect(); 
         }
       },
-      { threshold: 0.2 } // 20% visible hone pe trigger
+      // triggred when 20% of the section is visible
+      { threshold: 0.2 } 
     );
 
     if (sectionRef.current) {
@@ -59,7 +63,7 @@ export default function Skills() {
         <div className="grid sm:grid-cols-2 gap-4">
           {SKILLS.map((skill, index) => (
             // Each skill card
-            // style={{ animationDelay }} = stagger effect (ek ek karke aaye)
+            // style={{ animationDelay }} = stagger effect (one after another)
             <div
               key={skill.name}
               className="bg-[#0a0e1a] border border-orange-500/15 rounded-2xl p-5 hover:border-orange-500/40 transition-all duration-200 hover:-translate-y-1"

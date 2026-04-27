@@ -33,12 +33,12 @@ const TechOrbit = () => {
     duration: Math.random() * 20 + 10,
   })), []);
 
-  // 2. Icons Logic: Center ko 60% khali rakhna hai
+  // 2. Icons Logic: 60% empty from center
   const randomIcons = useMemo(() => ICONS.map((item) => {
     const side = Math.floor(Math.random() * 4);
     let x, y;
 
-    // Har icon ko screen ke edges (0-20% ya 80-100%) par bhej rahe hain
+    // each icon on screen edges (0-20% ya 80-100%)
     if (side === 0) { // Left
       x = Math.random() * 20; 
       y = Math.random() * 100;
@@ -57,7 +57,8 @@ const TechOrbit = () => {
       ...item,
       x, y,
       z: Math.random() * 200 - 100,
-      moveX: Math.random() * 60 - 30, // Choti movement taake center mein na ghusein
+      // small random movement for orbit effect
+      moveX: Math.random() * 60 - 30, 
       moveY: Math.random() * 60 - 30,
       duration: Math.random() * 15 + 20,
     };
@@ -112,7 +113,7 @@ const TechOrbit = () => {
         ))}
       </div>
 
-      {/* LAYER 3: Center Glow Gradient (Text read-ability ke liye) */}
+      {/* LAYER 3: Center Glow Gradient (for Text read-ability ) */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_20%,#050816_80%)] opacity-70"></div>
     </div>
   );

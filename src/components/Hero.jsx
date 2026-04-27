@@ -42,7 +42,6 @@ const Hero = () => {
   return (
     <>
      <section id="home" className="min-h-screen relative overflow-hidden flex items-center justify-center px-6 py-20 lg:px-24 bg-[#050816]">
-  {/* <canvas ref={canvasRef} style={{position:'absolute',top:0,left:0,width:'100%',height:'100%',zIndex:0}} /> */}
       <div className="grid lg:grid-cols-2  gap-12 lg:gap-20 lg:text-left relative    z-10 mx-auto max-w-[1200px] ">
 
         {/* left  content */}
@@ -115,7 +114,6 @@ const Hero = () => {
             </div>
 
             {/* floating badge   */}
-            {/* <div className="absolute top-10 right-10 flex flex-col gap-4"> */}
              {FloatingBadge.map((b) => (
                 <div
                   key={b.text}
@@ -124,7 +122,6 @@ const Hero = () => {
                   {b.text}
                 </div>
               ))}
-            {/* </div>   */}
 
 
             
@@ -137,12 +134,6 @@ const Hero = () => {
 
 
       {/* SCROLL DOWN INDICATOR */}
-      {/* <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-[#8892a4] text-xs">
-        <span>Scroll Down</span>
-        <span className="animate-bounce text-orange-500">↓</span>
-      </div> */}
-
-      {/* SCROLL DOWN INDICATOR */}
       <div 
         onClick={scrollToAbout} // Click event add kiya
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-[#8892a4] text-xs cursor-pointer group"
@@ -151,14 +142,7 @@ const Hero = () => {
         <span className="animate-bounce text-orange-500 text-lg">↓</span>
       </div>
       
-{/* scroll indicator */}
-       {/* <div
-        onClick={scrollToAbout}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-[#8892a4] text-xs cursor-pointer group"
-      >
-        <span className="group-hover:text-orange-500 transition-colors">Scroll Down</span>
-        <span className="animate-bounce text-orange-500 text-lg">↓</span>
-      </div> */}
+
      </section>
 
     </>

@@ -9,7 +9,7 @@ export default function Custompointer() {
     const move = (e) => setPos({ x: e.clientX, y: e.clientY })
     window.addEventListener('mousemove', move)
 
-    // Ring smoothly follow kare
+    // Ring smoothly follow the cursor
     let animId
     function animRing() {
       ringRef.current.x += (pos.x - ringRef.current.x) * 0.12

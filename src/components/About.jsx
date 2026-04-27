@@ -22,8 +22,6 @@ const About = () => {
               </h2>
               <h3 className="text-4xl md:text-5xl font-bold text-white tracking-tight leading-tight">
                 Building the Next Generation of Web Interfaces
-                {/* Transforming ideas into <br /> 
-                <span className="text-gray-500 italic font-light">seamless digital reality.</span> */}
               </h3>
             </div>
             
