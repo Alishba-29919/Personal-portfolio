@@ -6,10 +6,10 @@ import { useEffect, useRef } from 'react'
 
 // social links data
 const SocialLinks = [
-    { name: "LinkedIn", icon: "fa-brands fa-linkedin", url: "https://www.linkedin.com/in/alishba-abbas-9a1b4b1b3/", color: "hover:border-white hover:text-white" },
-    { name: "GitHub", icon: "fa-brands fa-github", url: "https://github.com/alishba-abbas", color: "hover:border-pink-500 hover:text-white" },
-    { name: "Instagram", icon: "fa-brands fa-instagram", url: "https://www.instagram.com/alishba_abbas_/", color: "hover:border-pink-500 hover:text-white" },
-    { name: "Facebook", icon: "fa-brands fa-facebook", url: "https://www.facebook.com/alishba.abbas.5", color: "hover:border-pink-500 hover:text-white" }
+    { name: "LinkedIn", icon: "fa-brands fa-linkedin", url: "https://www.linkedin.com/in/alishba-a-03b86535a", color: "hover:border-white hover:text-white" },
+    { name: "GitHub", icon: "fa-brands fa-github", url: "https://github.com/Alishba-29919", color: "hover:border-pink-500 hover:text-white" },
+    { name: "Instagram", icon: "fa-brands fa-instagram", url: "/", color: "hover:border-pink-500 hover:text-white" },
+    { name: "Facebook", icon: "fa-brands fa-facebook", url: "/", color: "hover:border-pink-500 hover:text-white" }
 ];
 
   //  right side floating badges avatar
