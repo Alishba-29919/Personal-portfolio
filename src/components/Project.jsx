@@ -1,4 +1,7 @@
 import React from 'react';
+import img1 from '../assets/portfolio img7-17 111629.png';
+import img2 from '../assets/Dashboard-project-img.png';
+import img3 from '../assets/job-board.png';
 import { motion } from 'framer-motion';
 import { FiExternalLink, FiGithub } from 'react-icons/fi';
 
